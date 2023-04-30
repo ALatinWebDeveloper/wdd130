@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Lato&family=Roboto:ital@1&display=swap');
+
+:root {
+    --primary-color: #60E1E0;
+    --secondary-color: #FF7733;
+    --accent1-color: #FFF70A;
+    --accent2-color: #FFFFFF;
+  
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Lato', serif;
+  
+    --nav-background-color: #FFFFFF;
+    --nav-link-color: #000000;
+    --nav-hover-link-color: #FFFFFF;
+    --nav-hover-background-color: #7D53DE;
+  }
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+header {
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+p {
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--accent1-color);
+    display: flex;
+    font-size: 1.5rem;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
