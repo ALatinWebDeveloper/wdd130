@@ -21,8 +21,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    color: white;
+    font-family: Konkhmer Sleokchher, Lato, Roboto;
     width: 100%;
     margin: 0;
+    background-color: #2d2d2d;
 }
 
 header {
@@ -58,10 +61,19 @@ a {
 }
 
 .hero {
-    position: relative;
-    width: 80%;
-    margin: 50px auto;
-    display: flex;
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.location {
+    margin: 0 0  0 5rem;
+}
+
+.location h2 {
+    margin-top: 0;
 }
 
 h1, article {
@@ -87,6 +99,8 @@ h1, article {
 
 .hero {
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .hero article img {
@@ -108,7 +122,6 @@ h1, article {
 
 .history img {
     max-width: 200px;
-    grid-template-rows: 2 / 4;
 }
 
 .history h2 {
@@ -121,8 +134,12 @@ h1, article {
 .adventure {
     display: grid;
     align-self: center;
-    width: 100%;
-    margin: 0 auto;
+    width: max-content;
+    margin: 5rem auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    color: white;
 }
 
 .adventure h2 {
@@ -132,11 +149,23 @@ h1, article {
 
 .adventure img {
     max-width: 200px;
+    height: 280px;
+    border-radius: 5px 5px 0 0;
+    border: #000000 solid 1px;
 }
 
 .adventure figure {
     text-align: center;
     margin: 0 10px;
+    background-color: #1b1b1b;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.job {
+    margin: .5rem 0;
+    color: #7D53DE;
+    border-bottom: solid 1px white;
 }
 
 article p {
@@ -170,4 +199,87 @@ footer a {
 footer img {
     width: 25px;
     display: inherit;
+}
+
+address p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+h4 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+form {
+    font-family: Konkhmer, Sleokchher;
+    display: grid;
+    align-content: center;
+    width: 40%;
+    margin: 2rem auto;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    color: white;
+    font-family: Lato, Roboto;
+}
+
+fieldset {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+}
+
+label {
+    font-size: 1.2rem;
+    padding: .5rem 1rem .5rem 0;
+    color: rgb(255, 255, 255);
+}
+
+legend {
+    padding: .5rem 1rem .5rem 0;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+input, textarea, select {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    padding: .5rem;
+    font-size: large;
+    text-align: center;
+    width: fit-content;
+    margin: 1rem auto;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(128, 0, 255);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(94, 0, 188);
+    cursor:pointer;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: .5rem 0;
+    display: grid;
+    text-align: right;
 }
