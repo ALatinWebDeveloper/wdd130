@@ -58,6 +58,23 @@ header nav a:hover {
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+.live {
+    background-color: #5b5b5b;
+    padding: 3rem;
+}
+
+.live h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.live p {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .hero {
@@ -172,6 +189,31 @@ article p {
     text-align: center;
     width: 100%;
     height: auto;
+}
+
+table {
+    width: 80%;
+    margin: 2rem auto;
+
+}
+
+thead {
+    color: var(--secondary-color);
+}
+
+td, th, table {
+    border: solid 1px white;
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+thead {
+    border: solid 1px white;
+}
+
+.trips p {
+    text-align: center;
 }
 
 footer { 
